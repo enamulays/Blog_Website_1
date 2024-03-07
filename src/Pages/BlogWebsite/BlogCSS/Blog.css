@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item{
+    background-color: #f8f0fa;
+    z-index: 0;
+}
+.ShortTitle{
+    color: #5d5d5d;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: -1px;
+    width: 90%;
+}
+.LongTitle{
+    font-size: 20px;
+    color: black;
+}
+.ChannelName{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: -2px;
+}
+.carousel-control-prev-icon{
+    background-image: url(arrow-left-circle.svg) !important;
+    margin-left: -200px;
+}
+.carousel-control-next-icon{
+    background-image: url(arrow-right-circle.svg) !important;
+    margin-right: -200px;
+}
+.d-block{
+    width: 24rem;
+    height: 24rem
+}
+
+.nav-link{
+    color: red;
+}
+
+.container .active{
+    color: rgb(3, 230, 105) !important;
+}
+.footer-top-border{
+    background-color: #443c3c;
+    width: 100%;
+    height: .05rem;
+}
+.btn-outline-red{
+    background-color: rgb(255, 0, 0) !important;
+}
+.dvs-header_trigger {
+    display: none !important; 
+}
+.row .cardclass{
+    margin-right: 4rem
+}
+
+
+
+@media screen and (max-width:380px){
+    html{
+        font-size: 10px;
+    }
+
+    #root{
+        width: 37rem;
+    }
+    .container{
+        width: 90% !important;
+    }
+    .navbar-right-area  .me-auto{
+        display: none;
+    }
+    .navbar-right-area .is-open {
+        display: block !important;
+        align-items: right !important;
+        justify-content: right !important;
+        position: absolute;
+        top: 10%;
+        background-color: rgb(255, 3, 255);
+        left: -2%;
+        border-radius: 3%;
+        z-index: 2;
+    }
+    .dvs-header_trigger {
+        display: block !important;
+    }
+
+    .navbar-full-area{
+        position: relative;
+        display: inline !important;
+    }
+    /* Carousel */
+    .carousel-inner .row{
+        flex-direction: column !important;
+    }
+    .carousel-inner .col {
+        height: 25rem;
+        width: 33.3rem;
+    }
+    .carousel-inner img{
+        width: 32rem;
+        height: 25rem;
+    }
+    .carousel-inner .ShortTitle{
+        width: 98%
+    }
+    .carousel-control-prev-icon{
+        margin-left: -5rem;
+    }
+    .carousel-control-next-icon{
+        margin-right: -5rem;
+    }
+    /*Card Area*/
+    .container .col-3{
+        width: 49%;
+        overflow: hidden;
+        margin-right: .2rem;
+        padding: 0;
+    }
+    .container .card{
+        width: 100%;
+    }
+}
